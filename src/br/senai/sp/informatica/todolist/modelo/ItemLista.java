@@ -1,11 +1,16 @@
-package Modelo;
+package br.senai.sp.informatica.todolist.modelo;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties("lista")
+@Entity
 public class ItemLista {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
