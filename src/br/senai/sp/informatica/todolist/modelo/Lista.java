@@ -1,4 +1,4 @@
-package Modelo;
+package br.senai.sp.informatica.todolist.modelo;
 
 import java.util.List;
 
